@@ -1,0 +1,209 @@
+.home-background {
+  background-image: url(C:\Users\3mand\teste\src\assets\mesh-200.png);
+  background-repeat: no-repeat;
+  padding: 320px 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 500;
+  background-size: 1810px;
+ background-size: cover;
+}
+
+body {
+  background-color: #e1e8ba;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Estilo do grupo de texto */
+.grouptext {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 70px;
+  margin-left: -80px;
+}
+
+
+.text1{
+  font-size: 33px;
+  color: #2b3128;
+  font-weight: 700;
+}
+
+
+.text2 {
+  max-width: 700px;
+  padding-top: 10px;   /*espaco entre o texto */
+  font-size: 20px;
+  text-align: justify;
+  color:#353535
+}
+
+
+/* Estilização da imagem */
+.sla {
+  width: 120%; /* Aumentei ainda mais a largura */
+  max-width: 710px; /* Defini um tamanho máximo maior */
+  height: auto;
+  border-radius: 40%;
+  border-bottom-right-radius: 40;
+  display: block;
+  margin-left: 750px; /* Move a imagem para a direita */
+  margin-top: -367px; /* Move a imagem para cima */
+}
+
+
+ 
+ 
+/* Ajuste para manter os elementos alinhados */
+.row {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+/* Estilização do vídeo */
+.video-left {
+  width: 100px;
+  height: auto;
+  border-radius: 45px;
+  margin-left: 750px;
+  position: relative;
+  top: 50px; /* Ajuste o valor conforme necessário */
+  display: block;
+}
+
+
+
+/* Seção de Testemunhos */
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha a seção à esquerda */
+  margin-left: -85px; /* Ajusta a posição para a esquerda */
+  padding: 50px 1;
+  margin-top: 310px;
+}
+
+
+
+
+.testimonials h2 {
+  font-size: 32px;
+  display: flex;
+  font-weight: 600;
+  color: #292929; /* Cor roxa do título */
+  text-align: center;
+  padding-left: 500px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+
+
+h2 {
+  position: relative;
+  display: inline-block; /* Garante que a linha fique alinhada com o texto */
+  font-size: 32px;
+  font-weight: 600;
+  color: #292929;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px; /* Distância da linha em relação ao texto */
+  width: 0%;
+  height: 3px;
+  background-color: #6e8070; /* Cor da linha */
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  transform: translateX(-8%); /* Mantém a linha centralizada */
+  border-radius: 600px;
+}
+
+h2:hover::after {
+  width: 60%;
+}
+
+
+
+/* Grid de Cards */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas */
+  gap: 30px 25px; /* Espaçamento entre os cards */
+  justify-content: start; /* Alinha os cards à esquerda */
+  margin-top: 48px;
+}
+
+/* Estilização dos Cards */
+.card {
+  background: #ffffff; /* Cor roxa clara de fundo */
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 20px;
+  width: 250px; /* Tamanho exato do card */
+  position: relative; /* Permite movimentação */
+  border: none ;
+
+}
+
+/* Faz os cards da segunda coluna subirem levemente */
+.card:nth-child(2n) {
+  top: -40px; /* Move os cards da direita para cima */
+}
+
+/* Cabeçalho do Card */
+.card-header {
+  background: transparent;
+  padding: 13px;
+  display: flex;
+  border: none !important;
+
+  justify-content: center;
+}
+
+.card-header img {
+  width: 50px; /* Ajusta tamanho do ícone */
+  height: auto;
+}
+
+/* Corpo do Card */
+.card-body h3 {
+  color: #375e23; /* Roxo escuro */
+  font-weight: bold;
+  font-size: 18px;
+}
+.card-body{
+  background-color: #e6e6e654;
+  border-radius: 15px;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+
+/* Rodapé do Card */
+.blockquote-footer {
+  font-size: 12px;
+  font-style: italic;
+  color: #599e64;
+  margin-top: 5px;
+}

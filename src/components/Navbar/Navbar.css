@@ -1,0 +1,51 @@
+/* Deixa a navbar transparente */
+.custom-navbar {
+  background-color: transparent; /* Remove qualquer fundo sólido */
+  position: absolute; /* Faz a navbar "flutuar" sobre o fundo */
+  width: 100%; /* Ocupa toda a largura */
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 1; /* Garante que fique acima de outros elementos */
+}
+  
+  .custom-brand {
+    font-weight: 700;
+    color: #020202;
+    font-size: 27px;
+  
+  }
+  
+  .custom-link {
+    font-weight: 600;
+    color: #353535;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    margin-left: 20px; /* Espaço entre a logo e o nome */
+
+  }
+
+  .custom-link:hover {
+    transform: translateY(-3px) translateX(-1px);
+    color: #020202;
+    font-weight: 600;
+
+  }
+  
+   /*Imagem logo */
+     .imagem {
+      height: 40px; /* Altura da logo */
+      text-align: right; /* Move todo o conteúdo da navbar para a direita */
+      width: auto; /* Mantém a proporção original */
+      margin-left: -80px; /* Move o texto mais para a esquerda */
+    }
+    
+
+
+
+      /* Ajustes para telas menores */
+        @media (max-width: 768px) {
+       .imagem {
+        height: 40px; /* Reduz a altura da logo para telas menores */
+    }
+}
