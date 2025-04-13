@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.politica-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f2ef; /* Cor de fundo suave */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 30px;
+  box-sizing: border-box; /* Garantir que o padding não quebre o layout */
+}
+
+.politica-box {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1500px; /* Definir uma largura máxima para não ficar largo demais */
+  margin-top: 20px;
+}
+
+.politica-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #353535;
+  margin-bottom: 25px;
+  text-align: left;
+  
+}
+
+.politica-subtitle {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2d3f2d; /* Verde mais suave */
+    margin-top: 30px; /* Maior espaçamento superior */
+    margin-bottom: 15px; /* Menor espaçamento inferior */
+  }
+  
+  .politica-text {
+    color: #555;
+    margin-bottom: 30px; /* Aumentar o espaçamento entre parágrafos */
+    line-height: 1.8;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left; /* Para um alinhamento mais elegante do texto */
+  }
+  
+  
+.politica-button {
+    text-decoration: none;
+    color: #fff; /* Cor do texto no botão */
+    display: block; /* Garante que o botão ocupe toda a largura disponível */
+    padding: 15px 15px; /* Maior padding para aumentar o tamanho */
+    background-color: #65a565c5;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin: 30px auto; /* Centraliza o botão */
+    width: 10%; /* Ajusta a largura do botão para ocupar 80% da largura do contêiner */
+    text-align: center;
+    cursor: pointer; /* Mostrar que é clicável */
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    margin-top: 70px;
+  }
+  
+
+.politica-button:hover {
+  background-color: #e9d291; /* Cor mais escura no hover */
+  transform: scale(1.05); /* Leve aumento no hover */
+}
+
+.politica-button:focus {
+  outline: none; /* Remover contorno quando o botão estiver focado */
+}
+
+.politica-button:active {
+  transform: scale(1); /* Voltar ao tamanho original quando clicado */
+}
+

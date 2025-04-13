@@ -1,17 +1,18 @@
 .footer {
-  background-color: #365333a1;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 20px;
+  background-color: #3f4e3b;
+  color: rgb(250, 248, 248);
+  text-align: left;
+  padding: 30px;
   position:relative;
   bottom: 0;
   width: 100%;
+  
 }
 
 .footer-container {
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: left;
+  gap: 300px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;

@@ -29,8 +29,8 @@ const Home = () => {
           </div>
         </div>
 
-  
-       
+
+
 
         {/* Seção de Testemunhos */}
         <section className="testimonials py-5">
@@ -39,7 +39,7 @@ const Home = () => {
           </div>
 
           <div className="saiba2">
-          <p> Sobre nosso aplicativo e vacinas:        </p>
+            <p> Sobre nosso aplicativo e vacinas:        </p>
           </div>
 
           <div className="testimonials-grid">
@@ -55,8 +55,8 @@ const Home = () => {
               </div>
             </div>
 
-        
-        
+
+
             {/* Testemunho 2 */}
             <div className="card">
               <div className="card-header">
@@ -97,29 +97,29 @@ const Home = () => {
 
 
         <div className="grafico">
-   <img src="src\assets\grafico.png" alt="Descrição da kakakak" />
-   </div>
+          <img src="src\assets\grafico.png" alt="Descrição da kakakak" />
+        </div>
 
 
-             
+        sec
         <div className="col-12 frase1">
-  <h2>Para que serve a vacinação?</h2>
-  <p className="subtitulo">
-      Redução de Doenças: A vacinação ajudou a reduzir a incidência de doenças como sarampo, poliomielite
-      , difteria e tétano em mais de 90% globalmente.<p></p>
-      Impacto Econômico: A cada US$ 1 investido em programas de vacinação, estima-se que há um retorno de US$ 44 em benefícios de saúde.<p></p>
-      Erradicação de Doenças: A varíola foi erradicada em 1980 graças a campanhas de vacinação em massa.
-      <p></p>
-      Prevenção de Mortes: Estima-se que vacinas prevenem cerca de 2 a 3 milhões de mortes por ano, de acordo com a Organização Mundial da Saúde (OMS).
-        </p>
-    </div>
+          <h2>Para que serve a vacinação?</h2>
+          <p className="subtitulo">
+            Redução de Doenças: A vacinação ajudou a reduzir a incidência de doenças como sarampo, poliomielite
+            , difteria e tétano em mais de 90% globalmente.<p></p>
+            Impacto Econômico: A cada US$ 1 investido em programas de vacinação, estima-se que há um retorno de US$ 44 em benefícios de saúde.<p></p>
+            Erradicação de Doenças: A varíola foi erradicada em 1980 graças a campanhas de vacinação em massa.
+            <p></p>
+            Prevenção de Mortes: Estima-se que vacinas prevenem cerca de 2 a 3 milhões de mortes por ano, de acordo com a Organização Mundial da Saúde (OMS).
+          </p>
+        </div>
 
         {/* Seção de Vídeo */}
         <div className="col-12 text-center mt-4">
-  <div className="video-container">
-    <video className="video" autoPlay loop muted>
-      <source src={VideoSrc} type="video/mp4" />
-      Seu navegador não suporta vídeos.
+          <div className="video-container">
+            <video className="video" autoPlay loop muted>
+              <source src={VideoSrc} type="video/mp4" />
+              Seu navegador não suporta vídeos.
             </video>
           </div>
         </div>

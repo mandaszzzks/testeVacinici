@@ -25,7 +25,7 @@ import Imagem from "../../assets/logor.png"; // Importação correta
             <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav gap-3">
             <li className="nav-item">
-            <a className="nav-link custom-link" href="#">Entrar</a>
+            <a className="nav-link custom-link" href="Entrar">Entrar</a>
             </li>
 
             <li className="nav-item">

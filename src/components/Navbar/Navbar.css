@@ -11,14 +11,14 @@
   
   .custom-brand {
     font-weight: 700;
-    color: #020202;
+    color: #000000;
     font-size: 27px;
   
   }
   
   .custom-link {
     font-weight: 600;
-    color: #353535;
+    color: #302d2d;
     transition: all 0.3s ease;
     font-size: 18px;
     margin-left: 20px; /* Espaço entre a logo e o nome */
