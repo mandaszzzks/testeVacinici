@@ -1,10 +1,9 @@
 .footer {
-  background-color: #3f4e3b;
-  color: rgb(250, 248, 248);
+  background-color: #aeb9a7;
+  color: rgb(0, 0, 0);
   text-align: left;
-  padding: 30px;
+  padding: 40px;
   position:relative;
-  bottom: 0;
   width: 100%;
   
 }
@@ -33,13 +32,13 @@
 }
 
 .footer ul li a {
-  color: #ccc;
+  color: #000000;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer ul li a:hover {
-  color: white;
+  color: rgb(58, 97, 43);
 }
 
 .footer-icons img {

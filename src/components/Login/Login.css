@@ -1,34 +1,139 @@
-/* Fundo geral da página */
-.container-fluid {
-    background-color: #65a565c5;
+/* Tela inteira da página de login */
+.login-page {
+  height: 100vh;
+  background-image: url(src/assets/mesh-693.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Caixa de login maior */
+
+.form-group::after{ 
+border: none;
+}
+
+
+/* Caixa central de login */
 .login-box {
-    max-width: 900px; /* Aumentando a largura do quadrado */
-    min-height: 600px; /* Aumentando a altura */
-
+  display: flex;
+  width: 83%;
+  max-width: 2000px;
+  min-height: 750px;
+  background-color: #fffefd;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 200px;
 }
 
 
-.form-control {
-    height: 50px;
-    font-size: 18px;
-    padding: 12px;
-  }
+
+
+
+
+/* Lado esquerdo - formulário */
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+
+
+/* Lado direito - imagem */
+.login-right {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 260px;
+}
+
+
+
+/* Imagem ilustrativa */
+.login-image {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/* Título */
+.login-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 100px;
+ 
+}
+
+
+
+
+/* Texto extra */
+.frase4 {
+  color: #424d3ec5;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+
+
+
+/* Campo de formulário */
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+
+.form-input input{
+  width: 100%;
+  max-width: 900px;
+  height: 60px;
+  font-size: 16px;
+  padding: 17px;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: none;
+  color: aqua;
+  margin-top: 60px;
   
-  .btn-dark {
-    padding: 15px;
-    font-size: 18px;
-  }
+}
 
 
-  .frase4{
-    color: #000000c5;
-    font-weight: 400;
-    margin-top: 14px;
-    margin-bottom: 100px;
-  }
 
 
-   
+/* Botão de login */
+.btn-login {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #3c473c;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 80px;
+}
+
+
+
+
+.btn-login:hover {
+  background-color: #657765;
+}
+
+h2::after {
+  display: none;
+}
