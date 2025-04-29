@@ -5,6 +5,7 @@
    import Footer from "./components/Footer/Footer"; //Importar todas as telas
    import Politica from "./components/Politica/Politica";
    import Login from "./components/Login/Login";
+import UserManagement from "./components/Adm/UserManagement";
 
 
    const Inicial = () =>{      {/*conjunto de telas*/}
@@ -26,6 +27,7 @@
                   <Route path='/Politica'  element={<Politica/>}/>
                   <Route path='/Bottom'  element={<Inicial/>}/>
                   <Route path='/Entrar'  element={<Login/>}/>
+                  <Route path='/Enter'  element={<UserManagement/>}/>
 
 
              </Routes>
