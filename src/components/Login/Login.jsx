@@ -2,6 +2,12 @@ import { useState, useEffect } from 'react';
 import './Login.css';
 import { useNavigate } from 'react-router-dom';
 
+// Ícones do MUI
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+
+// Imagem
+import vaciniilus from '../../assets/vaciniilus.png';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -10,11 +16,25 @@ export default function Login() {
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
+  const validations = [
+    { regex: /.{8,10}/, label: '8 a 10 caracteres' },
+    { regex: /[a-z]/, label: 'Letra minúscula' },
+    { regex: /[A-Z]/, label: 'Letra maiúscula' },
+    { regex: /\d/, label: 'Número' },
+    { regex: /[!@#$%^&*(),.?":{}|<>]/, label: 'Símbolo (Ex: !@#)' },
+  ];
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (username.trim() === '' || password.trim() === '') {
       setError('Por favor, preencha o usuário e a senha para continuar.');
+      return;
+    }
+
+    const isValid = validations.every(({ regex }) => regex.test(password));
+    if (!isValid) {
+      setError('A senha não atende todos os critérios de segurança.');
       return;
     }
 
@@ -32,18 +52,10 @@ export default function Login() {
     }
   }, [error]);
 
-  const validations = [
-    { regex: /.{8,10}/, label: '8 a 10 caracteres' },
-    { regex: /[a-z]/, label: 'letra minúscula' },
-    { regex: /[A-Z]/, label: 'letra maiúscula' },
-    { regex: /\d/, label: 'número' },
-    { regex: /[!@#$%^&*(),.?":{}|<>]/, label: 'símbolo (Ex: !@#)' },
-  ];
-
   return (
     <div className="login-page vh-100 d-flex align-items-center justify-content-center">
       <div className="row w-75 shadow-lg rounded p-5 login-box">
-        
+
         {/* Seção de Login */}
         <div className="col-md-6 d-flex flex-column login-title">
           <h2 className="fw-bold">Seja bem-vindo de volta!</h2>
@@ -54,7 +66,7 @@ export default function Login() {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Username"
+                placeholder="Usuário"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
@@ -64,22 +76,22 @@ export default function Login() {
               <input
                 type={showPassword ? 'text' : 'password'}
                 className="form-control pe-5"
-                placeholder="Password"
+                placeholder="Senha"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 maxLength={10}
               />
               <button
                 type="button"
-                className="btn btn-sm btn-outline-secondary position-absolute top-50 end-0 translate-middle-y me-2"
+                className="btn position-absolute top-50 end-0 translate-middle-y me-2"
                 onClick={() => setShowPassword(!showPassword)}
                 tabIndex={-1}
+                style={{ background: 'transparent', border: 'none' }}
               >
-                {showPassword ? '🙈' : '👁️'}
+                {showPassword ? <VisibilityOffIcon /> : <RemoveRedEyeIcon />}
               </button>
             </div>
 
-            {/* Validação de senha */}
             <div className="password-rules small text-start mb-3 bg-light p-2 rounded">
               {validations.map(({ regex, label }, index) => (
                 <div key={index} className={regex.test(password) ? 'text-success' : 'text-danger'}>
@@ -94,11 +106,10 @@ export default function Login() {
 
         {/* Seção de Ilustração */}
         <div className="col-md-6 bg-light d-flex flex-column align-items-center justify-content-center rounded login-right">
-          <img src="src/assets/vaciniilus.png" alt="Illustration" className="img-fluid" />
+          <img src={vaciniilus} alt="Ilustração" className="img-fluid" />
         </div>
       </div>
 
-      {/* Toast de erro embutido */}
       {error && (
         <div className="toast-error">
           {error}

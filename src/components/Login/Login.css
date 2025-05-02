@@ -127,8 +127,8 @@ border: none;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   margin-top: 90px;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
  

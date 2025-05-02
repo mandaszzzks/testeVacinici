@@ -273,3 +273,11 @@ h2 {
   color: #599e64;
   margin-top: 5px;
 }
+
+
+
+.titulo{
+  color: hsl(117, 11%, 38%);
+  font-size: 25px;
+  margin-left: 10px;
+}
