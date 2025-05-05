@@ -233,10 +233,10 @@
   color: #8e24aa;
 }
 
-/* Media Query para telas maiores (tablets e desktops) */
+/* Media Query só pra dar responsividade para a página (Caso fique ruim, pode alterar) */
 @media (min-width: 768px) {
   .user-management-container {
-      flex-direction: row; /* Alinha sidebar e conteúdo lado a lado */
+      flex-direction: row; /* Alinha sidebar e conteúdo lado a lado (Ao meu ver ficou bom) */
   }
 
   .sidebar {
@@ -287,3 +287,5 @@
       font-size: 1rem; /* Retorna o tamanho original da fonte do botão */
   }
 }
+
+/* Amanda! Só fica de olho quando eu fizer os 'forks' para o Github. Porque você vai precisar me dar um "OK" para acontecer as alterações no seu repositório. */
