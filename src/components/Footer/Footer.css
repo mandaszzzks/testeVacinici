@@ -10,11 +10,13 @@
 
 .footer-container {
   display: flex;
-  justify-content: left;
-  gap: 300px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .footer h3 {
@@ -41,26 +43,37 @@
   color: rgb(58, 97, 43);
 }
 
-.footer-icons img {
-  width: 50px;  /* Ajuste o tamanho conforme necessário */
-  height: 40px;
-  object-fit: contain; /* Mantém a proporção */
-  transition: transform 0.3s ease;
-  justify-content: center;
-  gap: 13px;
+.footer-icons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
   margin-top: 10px;
 }
 
-
-
-.footer-icons a {
-  font-size: 1.5rem;
-  color: white;
-  transition: transform 0.3s ease, color 0.3s ease;
-
+.footer-icons img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
 }
 
 .footer-icons img:hover {
-  transform: scale(1.2);
-  color: #ccc;
+  transform: scale(1.15);
+  box-shadow: 0 2px 8px rgba(60, 120, 60, 0.2);
+  background: #eaf5e3;
+}
+
+@media (max-width: 700px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 10px;
+  }
+  .footer {
+    padding: 20px 10px;
+  }
+  .footer-icons {
+    justify-content: flex-start;
+  }
 }

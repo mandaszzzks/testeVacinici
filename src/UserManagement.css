@@ -1,0 +1,291 @@
+/* Container geral */
+.user-management-container {
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+
+  .header{
+    color: #000000;
+    font-weight: 880;
+    font-size: 5;
+
+    display: flex;
+  }
+
+
+  /* Sidebar */
+  .sidebar {
+    width: 270px;
+    background-color: #fafafa;
+    padding: 40px;
+    border-right: 1px solid #fafafa;
+  }
+  
+  .sidebar-title {
+    font-size: 21px;
+    margin-bottom: 40px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 10px 0;
+    color: #474444;
+    cursor: pointer;
+  }
+  
+  .menu li.active {
+    color: #262b21;
+    font-weight: bold;
+  }
+  
+  /* Conteúdo principal */
+  .main-content {
+    flex: 1;
+    padding: 30px;
+   
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-user-btn {
+    background-color: #23682b;
+    color: #c4e4b7;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .user-table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #e1ecdb;
+  }
+  
+  .email {
+    font-size: 14px;
+    color: #757575;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-top: 9px;
+  }
+  
+  .badge.admin {
+    background-color: #d1f5d3;
+    color: #2e7d32;
+  }
+  
+  .badge.data-export {
+    background-color: #e0f2ff;
+    color: #199ed2;
+  }
+  
+  .badge.data-import {
+    background-color: #f3e5f5;
+    color: #8e24aa;
+  }
+  
+  /* Container geral */
+.user-management-container {
+  display: flex;
+  height: auto; /* Ajusta a altura automaticamente */
+  min-height: 100vh; /* Garante que o container ocupe pelo menos a altura da tela */
+  background-color: #ffffff;
+  flex-direction: column; /* Empilha os itens em telas menores */
+}
+
+.header {
+  color: #000000;
+  font-weight: 880;
+  /* Tornando a fonte relativa ao tamanho da tela */
+  font-size: 2rem; /* Use rem para melhor escalabilidade */
+  padding: 20px; /* Adiciona um pouco de espaço interno */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 100%; /* Ocupa toda a largura em telas menores */
+  background-color: #fafafa;
+  padding: 20px; /* Reduz o padding em telas menores */
+  border-right: none; /* Remove a borda em telas menores */
+  border-bottom: 1px solid #fafafa; /* Adiciona uma borda inferior para separar do conteúdo */
+}
+
+.sidebar-title {
+  font-size: 1.5rem; /* Reduz o tamanho da fonte em telas menores */
+  margin-bottom: 20px; /* Reduz a margem inferior */
+  text-align: center; /* Centraliza o título em telas menores */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Centraliza os itens do menu em telas menores */
+}
+
+.menu li {
+  padding: 15px 0; /* Aumenta o padding vertical para melhor toque em dispositivos móveis */
+  color: #474444;
+  cursor: pointer;
+  font-size: 1rem; /* Garante uma leitura confortável */
+}
+
+.menu li.active {
+  color: #262b21;
+  font-weight: bold;
+}
+
+/* Conteúdo principal */
+.main-content {
+  flex: 1;
+  padding: 20px; /* Reduz o padding em telas menores */
+}
+
+/* O header dentro do main-content já está estilizado acima */
+
+.add-user-btn {
+  background-color: #23682b;
+  color: #c4e4b7;
+  padding: 10px 15px; /* Ajusta o padding do botão */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  font-size: 0.9rem; /* Ajusta o tamanho da fonte do botão */
+}
+
+.user-table {
+  width: 100%;
+  margin-top: 20px; /* Reduz a margem superior */
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: auto; /* Adiciona barra de rolagem horizontal se a tabela for muito larga */
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.user-table th,
+.user-table td {
+  padding: 15px; /* Reduz o padding nas células da tabela */
+  text-align: left;
+  border-bottom: 1px solid #e1ecdb;
+  font-size: 0.85rem; /* Reduz o tamanho da fonte para caber em telas menores */
+  white-space: nowrap; /* Evita que o texto quebre em telas muito pequenas */
+}
+
+.email {
+  font-size: 0.75rem; /* Reduz ainda mais o tamanho da fonte do email */
+  color: #757575;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 8px; /* Ajusta o padding do badge */
+  border-radius: 12px;
+  font-size: 0.7rem; /* Reduz o tamanho da fonte do badge */
+  margin-right: 3px; /* Reduz a margem direita */
+  margin-top: 5px; /* Reduz a margem superior */
+}
+
+.badge.admin {
+  background-color: #d1f5d3;
+  color: #2e7d32;
+}
+
+.badge.data-export {
+  background-color: #e0f2ff;
+  color: #199ed2;
+}
+
+.badge.data-import {
+  background-color: #f3e5f5;
+  color: #8e24aa;
+}
+
+/* Media Query só pra dar responsividade para a página (Caso fique ruim, pode alterar) */
+@media (min-width: 768px) {
+  .user-management-container {
+      flex-direction: row; /* Alinha sidebar e conteúdo lado a lado (Ao meu ver ficou bom) */
+  }
+
+  .sidebar {
+      width: 270px; /* Retorna a largura original da sidebar */
+      padding: 40px; /* Retorna o padding original da sidebar */
+      border-right: 1px solid #fafafa; /* Retorna a borda direita */
+      border-bottom: none; /* Remove a borda inferior */
+  }
+
+  .sidebar-title {
+      font-size: 21px; /* Retorna o tamanho original da fonte */
+      margin-bottom: 40px; /* Retorna a margem inferior original */
+      text-align: left; /* Alinha o título à esquerda */
+  }
+
+  .menu ul {
+      text-align: left; /* Alinha os itens do menu à esquerda */
+  }
+
+  .main-content {
+      padding: 30px; /* Retorna o padding original do conteúdo principal */
+  }
+
+  .user-table th,
+  .user-table td {
+      padding: 20px; /* Retorna o padding original das células da tabela */
+      font-size: 1rem; /* Retorna o tamanho original da fonte da tabela */
+      white-space: normal; /* Permite que o texto quebre normalmente */
+  }
+
+  .email {
+      font-size: 14px; /* Retorna o tamanho original da fonte do email */
+  }
+
+  .badge {
+      font-size: 12px; /* Retorna o tamanho original da fonte do badge */
+      margin-right: 5px; /* Retorna a margem direita original */
+      margin-top: 9px; /* Retorna a margem superior original */
+  }
+
+  .header {
+      font-size: 3rem; /* Aumenta um pouco a fonte do header em telas maiores */
+      padding: 30px;
+  }
+
+  .add-user-btn {
+      padding: 12px 20px; /* Aumenta um pouco o padding do botão */
+      font-size: 1rem; /* Retorna o tamanho original da fonte do botão */
+  }
+}
+
+/* Amanda! Só fica de olho quando eu fizer os 'forks' para o Github. Porque você vai precisar me dar um "OK" para acontecer as alterações no seu repositório. */
