@@ -17,11 +17,7 @@ export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   const validations = [
-    { regex: /.{8,10}/, label: '8 a 10 caracteres' },
-    { regex: /[a-z]/, label: 'Letra minúscula' },
-    { regex: /[A-Z]/, label: 'Letra maiúscula' },
-    { regex: /\d/, label: 'Número' },
-    { regex: /[!@#$%^&*(),.?":{}|<>]/, label: 'Símbolo (Ex: !@#)' },
+    { regex: /.{8,10}/, label: '8 a 10 caracteres' }
   ];
 
   const handleSubmit = (e) => {
